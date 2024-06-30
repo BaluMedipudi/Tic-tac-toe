@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="TIC-TAC-TO.CSS">
+</head>
+<body>
+    <div class="container">
+        <h1>Tic Tac Toe</h1>
+        <div id="choiceContainer">
+            <button id="playerButton">Play with Player</button>
+            <button id="computerButton">Play with Computer</button>
+        </div>
+        <div id="playerChoiceContainer" style="display:none;">
+            <p>Choose your symbol:</p>
+            <button id="xButton">X</button>
+            <button id="oButton">O</button>
+        </div>
+        <div id="gameContainer">
+            <div class="board">
+                <div class="cell" data-index="0"></div>
+                <div class="cell" data-index="1"></div>
+                <div class="cell" data-index="2"></div>
+                <div class="cell" data-index="3"></div>
+                <div class="cell" data-index="4"></div>
+                <div class="cell" data-index="5"></div>
+                <div class="cell" data-index="6"></div>
+                <div class="cell" data-index="7"></div>
+                <div class="cell" data-index="8"></div>
+            </div>
+            <div class="scoreboard">
+                <p>Player 1 Wins: <span id="playerWins">0</span></p>
+                <p>Player 2/Computer Wins: <span id="computerWins">0</span></p>
+                <p>Ties: <span id="ties">0</span></p>
+            </div>
+            <div class="message" id="message">Player 1's turn (X)</div>
+            <div>
+                <button id="resetButton">Reset Game</button>
+                <button id="resetDataButton">Reset Data</button>
+            </div>
+        </div>
+    </div>
+    <script src="TIC-TAC-TOE.JS"></script>
+</body>
+</html>
